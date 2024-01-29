@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./products.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_wrapper">
+          <div class="logo">
+            <img src="./assets/svg/logo.svg" alt="" />
+          </div>
+
+          <div class="filter_search">
+            <div class="dropdown">
+              <button
+                class="btn btn-success"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="./assets/svg/menu.svg" alt="" />
+                Каталог
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+
+            <div class="search_box">
+              <input class="search" type="text" placeholder="Найти товар" />
+              <img class="lupa" src="./assets/svg/search.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="">
+            <nav>
+              <ul class="nav_list">
+                <li class="nav_list_item">
+                  <a class="nav_list_item_link" href="">
+                    <img src="./assets/svg/like.svg" alt="" />
+                    <p class="nav_title">Избранное</p>
+                  </a>
+                </li>
+
+                <li class="nav_list_item">
+                  <a class="nav_list_item_link" href="">
+                    <img src="./assets/svg/order.svg" alt="" />
+                    <p class="nav_title">Заказы</p>
+                  </a>
+                </li>
+
+                <li class="nav_list_item">
+                  <a class="nav_list_item_link" href="">
+                    <img src="./assets/svg/korzinka.svg" alt="" />
+                    <p class="nav_title">Корзина</p>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./assets/avatar.png" alt="" />
+              Алексей
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="all">
+        <div class="container">
+          <h2 class="all_title">Все продукты</h2>
+
+          <div class="all_wrapper">
+            <ul class="all_list"></ul>
+            <div class="productsPagination">
+                <button class="productsPagination__btn" id="pagBtn1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3536 6.64645C11.5488 6.84171 11.5488 7.15829 11.3536 7.35355L6.70711 12L11.3536 16.6464C11.5488 16.8417 11.5488 17.1583 11.3536 17.3536C11.1583 17.5488 10.8417 17.5488 10.6464 17.3536L5.64645 12.3536C5.45118 12.1583 5.45118 11.8417 5.64645 11.6464L10.6464 6.64645C10.8417 6.45118 11.1583 6.45118 11.3536 6.64645Z" fill="#414141"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3536 6.64645C18.5488 6.84171 18.5488 7.15829 18.3536 7.35355L13.7071 12L18.3536 16.6464C18.5488 16.8417 18.5488 17.1583 18.3536 17.3536C18.1583 17.5488 17.8417 17.5488 17.6464 17.3536L12.6464 12.3536C12.4512 12.1583 12.4512 11.8417 12.6464 11.6464L17.6464 6.64645C17.8417 6.45118 18.1583 6.45118 18.3536 6.64645Z" fill="#414141"/>
+                      </svg>
+                </button>
+                <button class="productsPagination__btn" id="pagBtn2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3536 5.64645C15.5488 5.84171 15.5488 6.15829 15.3536 6.35355L9.70711 12L15.3536 17.6464C15.5488 17.8417 15.5488 18.1583 15.3536 18.3536C15.1583 18.5488 14.8417 18.5488 14.6464 18.3536L8.64645 12.3536C8.45118 12.1583 8.45118 11.8417 8.64645 11.6464L14.6464 5.64645C14.8417 5.45118 15.1583 5.45118 15.3536 5.64645Z" fill="#414141"/>
+                      </svg>
+                </button>
+                <button class="productsPagination__btn" id="pagBtn3">1</button>
+                <button class="productsPagination__btn" id="pagBtn4">2</button>
+                <button class="productsPagination__btn" id="pagBtn5">3</button>
+                <button class="productsPagination__btn" id="pagBtn6">4</button>
+                <button class="productsPagination__btn" id="pagBtn7">5</button>
+                <button class="productsPagination__btn" id="pagBtn8">6</button>
+                <button class="productsPagination__btn" id="pagBtn9">7</button>
+                <button class="productsPagination__btn" id="pagBtn10">8</button>
+                <button class="productsPagination__btn" id="pagBtn11">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64645 5.64645C8.84171 5.45118 9.15829 5.45118 9.35355 5.64645L15.3536 11.6464C15.5488 11.8417 15.5488 12.1583 15.3536 12.3536L9.35355 18.3536C9.15829 18.5488 8.84171 18.5488 8.64645 18.3536C8.45118 18.1583 8.45118 17.8417 8.64645 17.6464L14.2929 12L8.64645 6.35355C8.45118 6.15829 8.45118 5.84171 8.64645 5.64645Z" fill="#414141"/>
+                      </svg>
+                </button>
+                <button class="productsPagination__btn" id="pagBtn12">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6464 6.64645C12.8417 6.45118 13.1583 6.45118 13.3536 6.64645L18.3536 11.6464C18.5488 11.8417 18.5488 12.1583 18.3536 12.3536L13.3536 17.3536C13.1583 17.5488 12.8417 17.5488 12.6464 17.3536C12.4512 17.1583 12.4512 16.8417 12.6464 16.6464L17.2929 12L12.6464 7.35355C12.4512 7.15829 12.4512 6.84171 12.6464 6.64645Z" fill="#414141"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64645 6.64645C5.84171 6.45118 6.15829 6.45118 6.35355 6.64645L11.3536 11.6464C11.5488 11.8417 11.5488 12.1583 11.3536 12.3536L6.35355 17.3536C6.15829 17.5488 5.84171 17.5488 5.64645 17.3536C5.45118 17.1583 5.45118 16.8417 5.64645 16.6464L10.2929 12L5.64645 7.35355C5.45118 7.15829 5.45118 6.84171 5.64645 6.64645Z" fill="#414141"/>
+                      </svg>
+                </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site_footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <img src="./assets/f_logo.svg" alt="" />
+
+          <ul class="footer_list">
+            <li class="footer_list_item">
+              <a class="footer_list_item_link" href="">О компании</a>
+            </li>
+            <li class="footer_list_item">
+              <a class="footer_list_item_link" href="">Контакты</a>
+            </li>
+            <li class="footer_list_item">
+              <a class="footer_list_item_link" href="">Вакансии</a>
+            </li>
+            <li class="footer_list_item">
+              <a class="footer_list_item_link" href="">Статьи</a>
+            </li>
+            <li class="footer_list_item">
+              <a class="footer_list_item_link" href=""
+                >Политика обработки персональных данных</a
+              >
+            </li>
+          </ul>
+
+          <ul class="social_links">
+            <li class="social_links_item">
+              <a class="social_links_item_link" href=""
+                ><img src="./assets/instagram.png" alt=""
+              /></a>
+            </li>
+            <li class="social_links_item">
+              <a class="social_links_item_link" href=""
+                ><img src="./assets/vkontakte.png" alt=""
+              /></a>
+            </li>
+            <li class="social_links_item">
+              <a class="social_links_item_link" href=""
+                ><img src="./assets/facebook.png" alt=""
+              /></a>
+            </li>
+            <li class="social_links_item">
+              <a class="social_links_item_link" href=""
+                ><img src="./assets/ok.png" alt=""
+              /></a>
+            </li>
+            <li class="social_links_item">
+              <a class="social_links_item_link" href="tel:88007773333"
+                ><img src="./assets/svg/phone.svg" alt="" />8 800 777 33 33</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_bottom">
+          <p>
+            Дизайн <img src="./assets/logo-zasovskiy-small-black.png" alt="" />
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="./products.js"></script>
+  </body>
+</html>
