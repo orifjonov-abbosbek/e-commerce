@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -12,8 +14,8 @@ a {
 ul,
 li,
 ol {
-  list-style: none;
-  padding: 0;
+  list-style: none !important;
+  padding: 0 !important;
 }
 
 body {
@@ -22,7 +24,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1480px !important;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -41,7 +43,7 @@ body {
 }
 
 .filter_search {
-    width: 40%;
+  width: 40%;
   display: flex;
   align-items: center;
   column-gap: 16px;
@@ -64,7 +66,7 @@ body {
 }
 
 .lupa {
-  position: absolute; 
+  position: absolute;
   right: 10px;
   top: 8px;
 }
@@ -90,12 +92,201 @@ body {
   margin: 0;
 }
 
-
-.dropdown button{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+.dropdown button {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
-
 /* header end  */
+
+.hero {
+  padding: 64px;
+  background-image: url("/assets/hero_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 36px;
+}
+
+.hero_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero_title {
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+/* Sale section */
+
+.sale {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.sale_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.sale_title {
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #414141;
+}
+
+.all_products {
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+  color: #606060;
+}
+
+.sale_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.sale_list_item {
+  width: 100%;
+  max-width: 272px;
+  cursor: pointer;
+  position: relative;
+}
+
+.like_icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.sale_list_item:hover {
+  box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
+}
+
+.sale_list_item:hover .v_korzinu {
+  background-color: #f63;
+  color: #fff;
+  border: none;
+}
+.card_img {
+  width: 100%;
+  background-color: #fff;
+}
+
+.price_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_title {
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #414141;
+}
+
+.v_korzinu {
+  width: 256px;
+  height: 40px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid #70c05b;
+  background-color: transparent;
+}
+
+.card_content {
+  padding: 8px;
+  background-color: #fff;
+}
+
+.price {
+  margin: 0;
+}
+
+.vcard {
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.type_payment {
+  margin: 0;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #bfbfbf;
+  margin-bottom: 8px;
+}
+
+.star_rating {
+  color: #fdd835;
+}
+
+.stars,
+.empty-stars {
+  color: #fdd835;
+}
+
+.stars {
+  color: #fdd835;
+}
+
+.empty-stars {
+  color: #cfd8dc;
+}
+
+/* NEW SECTION */
+
+.new_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.new_title {
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #414141;
+}
+
+.new_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+}
+.liked path {
+  fill: red;
+  stroke: red;
+}
