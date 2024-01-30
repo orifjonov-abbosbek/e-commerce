@@ -197,6 +197,7 @@ body {
 
 .card_title {
   font-family: Rubik;
+  height: 80px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -264,6 +265,10 @@ body {
 
 /* NEW SECTION */
 
+.new {
+  padding-bottom: 120px;
+}
+
 .new_top {
   display: flex;
   align-items: center;
@@ -289,4 +294,226 @@ body {
 .liked path {
   fill: red;
   stroke: red;
+}
+
+/* OLD SECTION */
+
+.old {
+  padding-bottom: 120px;
+}
+
+.old_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.old_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+/* LOYAL SECTION */
+
+.loyal_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loyal_list_item {
+  display: flex;
+  align-items: center;
+  background-color: #fcd5ba;
+  padding: 8px 20px !important;
+  box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.5);
+}
+.loyal_list_item:nth-child(2) {
+  background-color: #e5ffde;
+  padding: 20px 20px !important;
+}
+
+.loyal_card_title {
+  width: 100%;
+  max-width: 252px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: #414141;
+}
+
+.loyal_card_desc {
+  width: 100%;
+  max-width: 252px;
+}
+
+.shops {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+
+  margin-bottom: 80px;
+}
+.shops__title {
+  width: 100%;
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+}
+.shops__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.shops__bottom-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 0;
+}
+.shops__bottom-list_btn1 {
+  display: flex;
+  width: 97px;
+  height: 32px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: #70c05b;
+  color: #fff;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+}
+.shops__bottom-list_btn2 {
+  display: flex;
+  width: 86px;
+  height: 32px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: #f3f2f1;
+  color: #606060;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+}
+.shops__bottom-list_btn2:hover {
+  background: #70c05b;
+  color: #fff;
+}
+.shops__bottom-list_btn3 {
+  display: flex;
+  width: 104px;
+  height: 32px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: #f3f2f1;
+  color: #606060;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+}
+.shops__bottom-list_btn3:hover {
+  background: #70c05b;
+  color: #fff;
+}
+.shops__bottom-list_btn4 {
+  display: flex;
+  width: 80px;
+  height: 32px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: #f3f2f1;
+  color: #606060;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+}
+.shops__bottom-list_btn4:hover {
+  background: #70c05b;
+  color: #fff;
+}
+
+.site_footer {
+  background-image: url("./assets/f_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 24px 0;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_list {
+  display: flex;
+  column-gap: 40px;
+}
+
+.footer_list_item_link {
+  text-decoration: none;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #414141;
+}
+
+
+
+.social_links{
+  display: flex;
+  column-gap: 16px;
+}
+
+.social_links_item:nth-child(5){
+  margin-left: 40px;
+}
+
+.social_links_item_link{
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  text-decoration: none;
+  color: #414141;
+}
+
+.footer_bottom{
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }

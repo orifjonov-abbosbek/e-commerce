@@ -66,6 +66,7 @@ const Products = [
 document.addEventListener("DOMContentLoaded", function () {
   const saleList = document.querySelector(".sale_list");
   const newList = document.querySelector(".new_list");
+  const oldList = document.querySelector(".old_list");
 
   // Function to render products in a list
   function renderProducts(list, products) {
@@ -93,19 +94,15 @@ document.addEventListener("DOMContentLoaded", function () {
                   <p class="price vcard">${product.price_with_card}</p>
                   <p class="type_payment">С картой</p>
                 </div>
-    
                 <div>
                   <p class="price">${product.price_without_card}</p>
                   <p class="type_payment">Обычная</p>
                 </div>
               </div>
-    
               <h3 class="card_title">${product.name}</h3>
-    
               <div class="star_rating">
                 <span class="stars">${stars}</span>${halfStar}<span class="empty-stars">${emptyStars}</span>
               </div>
-    
               <button class="v_korzinu">В корзину</button>
             </div>
           `;
@@ -122,4 +119,5 @@ document.addEventListener("DOMContentLoaded", function () {
   // Render products in both lists
   renderProducts(saleList, Products);
   renderProducts(newList, Products);
+  renderProducts(oldList, Products)
 });
